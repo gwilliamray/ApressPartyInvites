@@ -17,9 +17,15 @@ namespace PartyInvites.Controllers
 
             return View("MyView");
         }
-
+        [HttpGet]
         public ViewResult RsvpForm()
         {
+            return View();
+        }
+        [HttpPost]
+        public ViewResult RsvpForm(GuestResponse gustResponse)
+        {
+            // TODO: store response from guest
             return View();
         }
         public IActionResult About()
